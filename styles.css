@@ -404,6 +404,10 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.skill-group:last-child:nth-child(3n + 1) {
+  grid-column: 2;
+}
+
 .site-footer {
   justify-content: space-between;
   width: min(1120px, calc(100% - 32px));
@@ -487,6 +491,10 @@ h3 {
   .split-section,
   .skill-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skill-group:last-child:nth-child(3n + 1) {
+    grid-column: auto;
   }
 
   .hero {
